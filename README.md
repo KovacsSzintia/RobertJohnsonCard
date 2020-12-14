@@ -1,2 +1,2 @@
 # RobertJohnsonCard
-Card aboout Robert Johnson
+Card about Robert Johnson
