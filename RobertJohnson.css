@@ -1,0 +1,132 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* positions */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 70rem;
+  width:100vw;
+  justify-content: center;
+  background-image: url(assets/background%20image.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card {
+  width: 95vw;
+  border: solid 2px rgba(201, 186, 156);
+  box-shadow: 12px 12px 12px;
+  background-color: rgba(201, 186, 156, .7);
+}
+
+.head {
+  width: 100%;
+}
+
+.profilpic {
+  width: 60%;
+  height: auto;
+}
+
+.links {
+  align-items: center;
+  text-align:center;
+  letter-spacing: 2rem;
+}
+.picture {
+  display: flex;
+  justify-content: center;
+  margin-top: -8rem;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+/* font settings */
+
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+h1, h2, p, a, i {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+a {
+  font-size: 3.75rem;
+  color: black;
+}
+ /* transforamations */
+
+.picture:hover {
+  transform: scale(1.2, 1.2);
+}
