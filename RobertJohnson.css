@@ -64,9 +64,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  margin-top: 5rem;
 }
 .card {
   width: 95vw;
+  max-width: 750px;
   border: solid 2px rgba(201, 186, 156);
   box-shadow: 12px 12px 12px;
   background-color: rgba(201, 186, 156, .7);
@@ -74,6 +76,7 @@ body {
 
 .head {
   width: 100%;
+  margin-top: 2rem;
 }
 
 .profilpic {
@@ -85,6 +88,7 @@ body {
   align-items: center;
   text-align:center;
   letter-spacing: 2rem;
+  padding: .5rem;
 }
 .picture {
   display: flex;
@@ -92,7 +96,14 @@ body {
   margin-top: -8rem;
   transition: width 2s, height 2s, transform 2s;
 }
-
+.quote {
+  color: rgb(255, 238, 204);
+  display: none;
+  text-shadow: 5px 4px black;
+}
+.giphy-embed {
+  margin-left: 120px;
+}
 /* font settings */
 
 h1 {
@@ -125,8 +136,62 @@ a {
   font-size: 3.75rem;
   color: black;
 }
+
+pre {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
  /* transforamations */
 
 .picture:hover {
   transform: scale(1.2, 1.2);
+}
+figure {
+	height: 0;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	position: relative;
+}
+
+figure iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+@media (min-width: 765px) {
+  .picture {
+    display: flex;
+    float: right;
+    margin: 1em;
+  }
+  .card {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width:1200px) {
+  .quote {
+    display: block;
+    margin-left: -5rem;
+    margin-right: 2.2rem;
+  }
+  body {
+    margin: 1rem;
+  }
+  h1 {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 20%;
+    font-size: 7rem;
+    color: rgb(255, 238, 204);
+    text-shadow: 8px 8px 8px black;  
+  }
+  .picture {
+    margin-top: -1rem;
+  }
 }
